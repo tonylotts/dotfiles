@@ -1,0 +1,11 @@
+# Global Git Config
+
+[user]
+  name = AUTHORNAME
+  email = AUTHOREMAIL
+[color]
+  ui = auto
+[log]
+  decorate = full
+[alias]
+  graph = log --graph --full-history --all --decorate=short --abbrev-commit
