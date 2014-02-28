@@ -1,0 +1,8 @@
+" Use modern settings
+set nocompatible
+
+" Source Vim config files in top-level topic directories
+" Inspired by https://github.com/skwp/dotfiles
+for fpath in split(globpath('~/dotfiles/*', '*.vim'), '\n')
+  exe 'source' fpath
+endfor
