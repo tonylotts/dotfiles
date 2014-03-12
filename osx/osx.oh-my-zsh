@@ -1,0 +1,4 @@
+if [[ "$(uname -s)" == "Darwin" ]]; then
+  plugins+=brew
+  plugins+=osx
+fi
