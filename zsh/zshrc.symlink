@@ -1,0 +1,25 @@
+# Set editor
+export EDITOR=vim
+
+# Set path
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/sbin"
+
+# Set dotfile dir
+DOTFILE_HOME=$HOME/dotfiles
+
+# Use control-r for history search in all modes
+bindkey '^R' history-incremental-search-backward
+
+# Update zshrc with command 'zshconfig'
+alias zshconfig="$EDITOR ~/.zshrc && source ~/.zshrc"
+
+# Source zsh files in top-level topic dirs
+typeset -U zsh_files
+zsh_files=($DOTFILE_HOME/*/*.zsh)
+for file in ${(M)zsh_files}
+do
+  source $file
+done
+
+# Source oh-my-zsh
+source $DOTFILE_HOME/zsh/oh-my-zsh
