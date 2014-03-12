@@ -26,6 +26,10 @@ fail () {
   exit
 }
 
+update_submodules () {
+  cd $DOTFILES_ROOT && git submodule update; cd -
+}
+
 setup_gitconfig () {
   if ! [ -f git/gitconfig.symlink ]
   then
@@ -121,6 +125,7 @@ install_dotfiles () {
 }
 
 setup_gitconfig
+update_submodules
 install_dotfiles
 
 # If we're on a Mac, let's install and setup homebrew.
