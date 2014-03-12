@@ -14,3 +14,7 @@ git graph
 
 ## Vim
 [Vundle](https://github.com/gmarik/Vundle) for plugin management.
+
+### Defaults
+* Relative line numbering, with absolute line number of current line.  
+* Syntax highlighting on.  

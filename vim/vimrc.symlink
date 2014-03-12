@@ -1,5 +1,8 @@
 " Use modern settings
 set nocompatible
+set number
+set relativenumber
+syntax on
 
 " Source Vim config files in top-level topic directories
 " Inspired by https://github.com/skwp/dotfiles
