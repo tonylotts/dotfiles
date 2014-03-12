@@ -1,0 +1,68 @@
+# Set 256 color mode
+set -g default-terminal "screen-256color"
+
+# Set copy mode bindings to vi style
+set -g mode-keys vi
+unbind [
+bind Escape copy-mode
+unbind p
+bind p paste-buffer
+bind -t vi-copy 'v' begin-selection
+bind -t vi-copy 'y' copy-selection
+
+# Enable Copy/Paste on OS X
+set-option -g default-command "reattach-to-user-namespace -l $SHELL"
+bind-key C-c run "tmux save-buffer - | reattach-to-user-namespace pbcopy"
+bind-key C-v run "tmux set-buffer $(reattach-to-user-namespace pbpaste); tmux paste-buffer"
+
+# Enable mouse
+set -g mode-mouse on
+set -g mouse-resize-pane on
+set -g mouse-select-pane on
+set -g mouse-select-window on
+
+# Set delay
+# This makes Tmux more responsive
+set -sg escape-time 1
+
+# Source config on PREFIX r
+bind r source-file ~/.tmux.conf \; display 'Config Reloaded'
+
+# Split Panes
+bind | split-window -h
+bind - split-window -v
+
+# Set vi style bindings for pane navigation
+bind-key h select-pane -L
+bind-key j select-pane -D
+bind-key k select-pane -U
+bind-key l select-pane -R
+
+# Pane divider colors
+set -g pane-border-fg colour245
+set -g pane-active-border-fg colour2
+
+# Set status bar settings
+set -g status-utf8 on
+set -g status-left-length 42
+set -g status-right-length 42
+set -g status-fg white
+set -g status-bg colour236
+set -g status-justify left
+setw -g monitor-activity on
+set -g visual-activity on
+
+# Set status bar powerline style
+# bright green : colour2
+# dark green   : colour22
+# bright blue  : colour33
+# light grey   : colour247
+# dark grey    : colour236
+# left thin    : ⮃
+# left bold    : ⮂
+# right thin   : ⮁
+# right bold   : ⮀
+set -g status-left '#[fg=colour22,bg=colour2,bold] #S:#I.#P #[fg=colour2,bg=colour236,nobold]⮀'
+set -g status-right '#[fg=colour247,bg=colour236,noreverse,nobold]⮃ #h #[fg=colour247,bg=colour236,noreverse,nobold]⮂#[fg=black,bg=colour247] %c '
+set -g window-status-current-format "#[fg=white,bg=colour236,noreverse,nobold]:#I #W ⮁"
+set -g window-status-format "#[fg=colour247,bg=colour236]:#I #W ⮁"
