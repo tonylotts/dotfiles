@@ -6,6 +6,10 @@ set relativenumber
 set mouse=a
 syntax on
 
+" Indentation
+set softtabstop=2
+set shiftwidth=2
+
 " Source Vim config files in top-level topic directories
 " Inspired by https://github.com/skwp/dotfiles
 for fpath in split(globpath('~/dotfiles/*', '*.vim'), '\n')

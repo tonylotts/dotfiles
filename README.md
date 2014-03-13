@@ -18,3 +18,4 @@ git graph
 ### Defaults
 * Relative line numbering, with absolute line number of current line.  
 * Syntax highlighting on.  
+* Indent by 2 spaces.
