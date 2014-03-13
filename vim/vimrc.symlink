@@ -1,5 +1,6 @@
 " Use modern settings
 set nocompatible
+set laststatus=2 "Always display statusline
 set number
 set relativenumber
 syntax on
