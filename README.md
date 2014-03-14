@@ -22,6 +22,7 @@ git graph
 * Indent by 2 spaces.
 
 ### General plugins
+* [bling/vim-airline](https://github.com/bling/vim-airline) - lightweight statusline
 * [jiangmiao/auto-pairs](https://github.com/jiangmiao/auto-pairs) - surround character sugar
 * [kien/ctrlp.vim](https://github.com/kien/ctrlp.vim) - fuzzy finder
 * [scrooloose/syntastic](https://github.com/scrooloose/syntastic) - syntax checking
