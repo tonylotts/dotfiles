@@ -1,4 +1,5 @@
 Bundle 'bling/vim-airline'
+Bundle 'edkolev/tmuxline.vim'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdcommenter'

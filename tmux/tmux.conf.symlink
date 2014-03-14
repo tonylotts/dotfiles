@@ -44,25 +44,6 @@ set -g pane-active-border-fg colour2
 
 # Set status bar settings
 set -g status-utf8 on
-set -g status-left-length 42
-set -g status-right-length 42
-set -g status-fg white
-set -g status-bg colour236
-set -g status-justify left
 setw -g monitor-activity on
 set -g visual-activity on
-
-# Set status bar powerline style
-# bright green : colour2
-# dark green   : colour22
-# bright blue  : colour33
-# light grey   : colour247
-# dark grey    : colour236
-# left thin    : ⮃
-# left bold    : ⮂
-# right thin   : ⮁
-# right bold   : ⮀
-set -g status-left '#[fg=colour22,bg=colour2,bold] #S:#I.#P #[fg=colour2,bg=colour236,nobold]⮀'
-set -g status-right '#[fg=colour247,bg=colour236,noreverse,nobold]⮃ #h #[fg=colour247,bg=colour236,noreverse,nobold]⮂#[fg=black,bg=colour247] %c '
-set -g window-status-current-format "#[fg=white,bg=colour236,noreverse,nobold]:#I #W ⮁"
-set -g window-status-format "#[fg=colour247,bg=colour236]:#I #W ⮁"
+source-file $DOTFILES_HOME/tmux/tmuxline
