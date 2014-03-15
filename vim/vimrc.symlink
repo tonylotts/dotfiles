@@ -7,6 +7,7 @@ set mouse=a
 syntax on
 
 " Indentation
+filetype plugin indent on
 set softtabstop=2
 set shiftwidth=2
 
