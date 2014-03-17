@@ -1,1 +1,2 @@
+Bundle 'airblade/vim-gitgutter'
 Bundle 'tpope/vim-fugitive'
