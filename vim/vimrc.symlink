@@ -16,3 +16,7 @@ set shiftwidth=2
 for fpath in split(globpath('~/dotfiles/*', '*.vim'), '\n')
   exe 'source' fpath
 endfor
+
+" Colorscheme
+set background=dark
+colorscheme solarized
