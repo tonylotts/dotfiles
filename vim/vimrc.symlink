@@ -15,6 +15,10 @@ set scrollbind
 
 " Indentation
 filetype plugin indent on
+set ai "auto indent
+set expandtab
+set smarttab
+set smartindent
 set softtabstop=2
 set shiftwidth=2
 
