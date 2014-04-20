@@ -4,6 +4,7 @@ set laststatus=2 "Always display statusline
 set number
 set relativenumber
 set mouse=a
+set wildmenu
 syntax on
 
 " Auto-read file when it's changed outside of vim
