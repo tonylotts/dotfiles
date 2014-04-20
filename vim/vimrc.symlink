@@ -6,6 +6,9 @@ set relativenumber
 set mouse=a
 syntax on
 
+" Auto-read file when it's changed outside of vim
+ set autoread
+
 " Indentation
 filetype plugin indent on
 set softtabstop=2
