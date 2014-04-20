@@ -9,6 +9,9 @@ syntax on
 " Auto-read file when it's changed outside of vim
  set autoread
 
+" Syncronize diff window scrolling
+set scrollbind
+
 " Indentation
 filetype plugin indent on
 set softtabstop=2
