@@ -18,6 +18,11 @@ filetype plugin indent on
 set softtabstop=2
 set shiftwidth=2
 
+" Turn off backup, in favor of modern SCM
+set nobackup
+set nowb
+set noswapfile
+
 " Source Vim config files in top-level topic directories
 " Inspired by https://github.com/skwp/dotfiles
 for fpath in split(globpath('~/dotfiles/*', '*.vim'), '\n')
