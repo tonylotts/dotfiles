@@ -28,3 +28,9 @@ git graph
 * [scrooloose/syntastic](https://github.com/scrooloose/syntastic) - syntax checking
 * [scrooloose/nerdcomenter](https://github.com/scrooloose/nerdcommenter) - commenting
 * [tpope/vim-surround](https://github.com/tpope/vim-surround) - add/modify/remove surrounding characters
+
+## Ctags
+### Defaults
+* Recurse into directories
+* Record paths relative to the tag file
+* Exclude .git directories
