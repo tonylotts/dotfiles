@@ -6,6 +6,7 @@ Bootstrap script from [holman/dotfiles](https://github.com/holman/dotfiles).
 ## Git
 * Verbose commit info displayed in log.
 * Alias for log graph.
+* Alias for generating ctags.
 * [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive) - Git interaction for Vim
 
 Graph log
@@ -30,6 +31,13 @@ git graph
 * [tpope/vim-surround](https://github.com/tpope/vim-surround) - add/modify/remove surrounding characters
 
 ## Ctags
+* Tim Pope's [git hooks](http://tbaggery.com/2011/08/08/effortless-ctags-with-git.html) for automated tagging
+* Git alias for generating ctags in git repos.
+
+```shell
+git ctag
+```
+
 ### Defaults
 * Recurse into directories
 * Record paths relative to the tag file
