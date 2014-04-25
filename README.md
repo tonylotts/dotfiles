@@ -28,7 +28,7 @@ git graph
 * [kien/ctrlp.vim](https://github.com/kien/ctrlp.vim) - fuzzy finder
 * [majutsushi/tagbar](http://majutsushi.github.io/tagbar/) - source outline viewer
 * [scrooloose/syntastic](https://github.com/scrooloose/syntastic) - syntax checking
-* [scrooloose/nerdcomenter](https://github.com/scrooloose/nerdcommenter) - commenting
+* [scrooloose/nerdcommenter](https://github.com/scrooloose/nerdcommenter) - commenting
 * [tpope/vim-surround](https://github.com/tpope/vim-surround) - add/modify/remove surrounding characters
 
 #### Tagbar
