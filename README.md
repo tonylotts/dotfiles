@@ -31,6 +31,10 @@ git graph
 * [scrooloose/nerdcommenter](https://github.com/scrooloose/nerdcommenter) - commenting
 * [tpope/vim-surround](https://github.com/tpope/vim-surround) - add/modify/remove surrounding characters
 
+#### NERDTree
+Close NERDTree on file open.  
+Single-click to open file.
+
 #### Tagbar
 Added support for Scala.
 Vim-airline support for Tagbar enabled.
@@ -43,6 +47,7 @@ Configuration:
 
 ### Mappings
 F9 - Toggle Tagbar (with autofocus, and autoclose).
+CTRL-n - Toggle NERDTree
 
 ## Ctags
 * Tim Pope's [git hooks](http://tbaggery.com/2011/08/08/effortless-ctags-with-git.html) for automated tagging
