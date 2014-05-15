@@ -23,6 +23,3 @@ done
 
 # Source oh-my-zsh
 source $DOTFILE_HOME/zsh/oh-my-zsh
-
-# Hack to set tmux-airline on first start of terminal
-vim -c q # Start then quit Vim
