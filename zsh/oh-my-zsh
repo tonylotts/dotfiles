@@ -29,4 +29,7 @@ do
   source $file
 done
 
+# Syntax highlighting must be in last position
+plugins+=zsh-syntax-highlighting
+
 source $ZSH/oh-my-zsh.sh # required
