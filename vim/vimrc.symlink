@@ -19,6 +19,8 @@ set smartindent
 set softtabstop=2
 set shiftwidth=2
 
+set nowrap
+
 " Turn off backup, in favor of modern SCM
 set nobackup
 set nowb
