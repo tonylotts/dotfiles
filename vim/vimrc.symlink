@@ -26,6 +26,9 @@ set nobackup
 set nowb
 set noswapfile
 
+" Global ignores
+set wildignore+=*.class,*/target/*
+
 " Source Vim config files in top-level topic directories
 " Inspired by https://github.com/skwp/dotfiles
 for fpath in split(globpath('~/dotfiles/*', '*.vim'), '\n')
