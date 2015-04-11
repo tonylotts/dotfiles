@@ -1,5 +1,5 @@
 # Set editor
-export EDITOR=vim
+export EDITOR='emacsclient -n --alternate-editor "open -a /Applications/Emacs"'
 
 # Set path
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/sbin"
