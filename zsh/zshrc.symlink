@@ -1,11 +1,6 @@
 # Set editor
 export EDITOR='emacsclient -n --alternate-editor "open -a /Applications/Emacs"'
 
-# Set path
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/sbin"
-
-# Set dotfile dir
-DOTFILE_HOME=$HOME/dotfiles
 
 # Use control-r for history search in all modes
 bindkey '^R' history-incremental-search-backward

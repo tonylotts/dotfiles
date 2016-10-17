@@ -1,0 +1,11 @@
+# Set dotfile dir
+DOTFILE_HOME=$HOME/dotfiles
+
+# Set path
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/sbin"
+
+# Set macOS specific env variables
+if [[ "$(uname -s)" == "Darwin" ]]; then
+    export PATH="/usr/local/bin:$PATH"
+    export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+fi
