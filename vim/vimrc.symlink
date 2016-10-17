@@ -4,12 +4,30 @@ set laststatus=2 "Always display statusline
 set number
 set relativenumber
 set mouse=a
+set wildmenu
 syntax on
+
+" Auto-read file when it's changed outside of vim
+ set autoread
 
 " Indentation
 filetype plugin indent on
+set ai "auto indent
+set expandtab
+set smarttab
+set smartindent
 set softtabstop=2
 set shiftwidth=2
+
+set nowrap
+
+" Turn off backup, in favor of modern SCM
+set nobackup
+set nowb
+set noswapfile
+
+" Global ignores
+set wildignore+=*.class,*/target/*
 
 " Source Vim config files in top-level topic directories
 " Inspired by https://github.com/skwp/dotfiles

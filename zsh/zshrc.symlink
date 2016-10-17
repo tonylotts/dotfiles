@@ -1,12 +1,3 @@
-# Set editor
-export EDITOR=vim
-
-# Set path
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/sbin"
-
-# Set dotfile dir
-DOTFILE_HOME=$HOME/dotfiles
-
 # Use control-r for history search in all modes
 bindkey '^R' history-incremental-search-backward
 
@@ -23,3 +14,5 @@ done
 
 # Source oh-my-zsh
 source $DOTFILE_HOME/zsh/oh-my-zsh
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
