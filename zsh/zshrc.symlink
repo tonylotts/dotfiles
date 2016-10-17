@@ -1,7 +1,3 @@
-# Set editor
-export EDITOR='emacsclient -n --alternate-editor "open -a /Applications/Emacs"'
-
-
 # Use control-r for history search in all modes
 bindkey '^R' history-incremental-search-backward
 
@@ -18,4 +14,5 @@ done
 
 # Source oh-my-zsh
 source $DOTFILE_HOME/zsh/oh-my-zsh
-source ~/.fzf.zsh
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

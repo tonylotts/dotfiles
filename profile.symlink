@@ -9,3 +9,8 @@ if [[ "$(uname -s)" == "Darwin" ]]; then
     export PATH="/usr/local/bin:$PATH"
     export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 fi
+
+# Set editor
+emacs=$DOTFILE_HOME/emacs/emacs.sh
+alias emacs=$emacs
+export EDITOR=emacsclient
